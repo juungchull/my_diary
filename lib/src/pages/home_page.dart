@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:my_diary/src/pages/calendar_page.dart';
 import 'package:my_diary/src/pages/my_diary.dart';
+import 'package:my_diary/src/widgets/today.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -46,15 +48,14 @@ class HomePage extends StatelessWidget {
                     )
                   ],
                 ),
-                SizedBox(height: 30),
+                SizedBox(height: 20),
+                Today(),
+                SizedBox(height: 20),
                 Expanded(
                   child: TabBarView(children: [
                     Container(child: MyDiary()),
                     Container(
-                      color: Colors.red,
-                      child: Center(
-                        child: Text('calendar'),
-                      ),
+                      child: CalendarPage(),
                     ),
                     Container(
                       color: Colors.yellow,
