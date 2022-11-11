@@ -52,7 +52,7 @@ class MyDiary extends StatelessWidget {
               ],
             ),
           ),
-        )
+        ),
         //diary list
       ],
     );
