@@ -8,7 +8,9 @@ class MyDiary extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: 5,
-      itemBuilder: (context, index) => TodayDetail(),
+      itemBuilder: (context, index) {
+        return TodayDetail();
+      },
     );
   }
 }

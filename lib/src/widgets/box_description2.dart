@@ -1,37 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:my_diary/src/widgets/box_description2.dart';
 
-class TodayDetail extends StatelessWidget {
-  const TodayDetail({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Card(
-          elevation: 3,
-          clipBehavior: Clip.antiAlias,
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
-          child: BoxDescription(),
-        ),
-        Card(
-          elevation: 3,
-          clipBehavior: Clip.antiAlias,
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
-          child: BoxDescription2(),
-        ),
-      ],
-    );
-  }
-}
-
-class BoxDescription extends StatelessWidget {
-  const BoxDescription({super.key});
+class BoxDescription2 extends StatelessWidget {
+  const BoxDescription2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +39,7 @@ class BoxDescription extends StatelessWidget {
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(16)),
             child: Ink.image(
               image: NetworkImage(
-                'https://images.unsplash.com/photo-1661956600654-edac218fea67?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1336&q=80',
+                'https://images.unsplash.com/photo-1668104365744-6c7732fabe0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60',
               ),
               width: 400,
               height: 200,
